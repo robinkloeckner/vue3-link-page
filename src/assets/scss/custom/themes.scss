@@ -1,0 +1,50 @@
+/*
+ * Define themes here.
+ */
+
+:root {
+  --background-default: #{$light};
+  --background-alternative: #{$light};
+
+  --title-default: #{$gray-600};
+  --title-alternative: #{$primary};
+  --title-bw: #{$dark};
+  --font-default: #{$dark};
+  --link-default: #{$dark};
+  --link-hover-default: #{$primary};
+
+  --border-default: #{$gray-400};
+  --border-default-plus: var(--background-default);
+
+  --switch-default: #{$gray-400};
+  --switch-background-default: var(--background-default);
+
+  --svg-default: #{$gray-550};
+  --svg-alternative: #{$primary};
+  --svg-hover-default: #{$primary};
+  --svg-background-default: #{$gray-400};
+
+  --primary: #{$primary};
+  --primary-hover: #{$gray-700};
+}
+
+:root.dark {
+  --background-default: #{$dark};
+  --background-alternative: #{$gray-800};
+
+  --title-default: #{$light};
+  --title-alternative: #{$gray-200};
+  --font-default: #{$gray-500};
+  --link-default: #{$gray-500};
+  --link-hover-default: #{$primary};
+
+  --border-default: var(--background-default-plus);
+  --border-default-plus: var(--background-default);
+
+  --switch-default: var(--background-default);
+  --switch-background-default: var(--background-default);
+
+  --svg-default: #{$primary};
+  --svg-hover-default: #{$gray-100};
+  --svg-background-default: #{$dark};
+}

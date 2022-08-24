@@ -1,0 +1,15 @@
+{
+  "service": "Software Development",
+  "btnHome": "Home",
+  "btnLegal": "Legal Notice",
+  "btnPrivacy": "Privacy",
+  "btnBackHome": "Back Home",
+  "contentLegal": "LegalHTML",
+  "contentPrivacy": "PrivacyHTML",
+  "contentFooter1": "Made with { vueRef } + {viteRef} and much { emoji }",
+  "contentFooter2": "Download source code on {githubRef}",
+  "legalH1": "Legal Notice",
+  "legalContent": "<h2>Information</h2>\n<p>{name}<br />\n{street}<br />\n{zip} {town}</p><p>Phone: {phone}<br />\nE-mail: {mail}</p><p>...</p>",
+  "privacyH1": "Privacy Policy",
+  "privacyContent": "<h2>1. Overview</h2>\n<h3>General information</h3> <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>"
+}

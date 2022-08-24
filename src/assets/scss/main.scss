@@ -1,0 +1,26 @@
+// 1. Import common third party styles.
+@import '@/assets/scss/bootstrap/functions.scss';
+
+// 2. Include any default variable overrides here
+@import "@/assets/scss/custom/variables.scss";
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "@/assets/scss/bootstrap/variables";
+@import "@/assets/scss/bootstrap/mixins";
+@import "@/assets/scss/bootstrap/root";
+
+// 4. Include any optional Bootstrap components as you like
+@import "@/assets/scss/bootstrap/utilities";
+@import "@/assets/scss/bootstrap/reboot";
+
+@import "@/assets/scss/bootstrap/containers";
+@import "@/assets/scss/bootstrap/grid";
+@import "@/assets/scss/bootstrap/card";
+
+// 5. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "@/assets/scss/bootstrap/utilities/api";
+
+// 5. Basic custom scss (Don't change order!).
+@import "@/assets/scss/custom/fonts.scss";
+@import "@/assets/scss/custom/themes.scss";
+@import "@/assets/scss/custom/base.scss";

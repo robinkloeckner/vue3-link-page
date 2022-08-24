@@ -1,0 +1,16 @@
+/*
+ * Define custom variables and override bootstrap variables here.
+ */
+
+// Colors (partially overriding bs5 theme variables).
+$primary: #89a55d;
+$secondary: #47a9da;
+$dark: #444444;
+$light: #ffffff;
+$gray-200: #ececec;
+$gray-550: #888888;
+$gray-800: #373737;
+
+// General Layout.
+$section-padding-x: 4rem;
+$section-padding-y: 3rem;
