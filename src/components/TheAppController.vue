@@ -25,6 +25,6 @@
 ----------------------->
 <style lang="scss" scoped>
   .wrapper-controller {
-    background-color: var(--background-alternative);
+    background-color: var(--background-alternative-2);
   }
 </style>

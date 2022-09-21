@@ -11,5 +11,15 @@
   "legalH1": "Legal Notice",
   "legalContent": "<h2>Information</h2>\n<p>{name}<br />\n{street}<br />\n{zip} {town}</p><p>Phone: {phone}<br />\nE-mail: {mail}</p><p>...</p>",
   "privacyH1": "Privacy Policy",
-  "privacyContent": "<h2>1. Overview</h2>\n<h3>General information</h3> <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>"
+  "privacyContent": "<h2>1. Overview</h2>\n<h3>General information</h3> <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>",
+  "contactFormH1": "Get in touch!",
+  "contactFormNameLabel": "Name",
+  "contactFormNameInvalid": "Please enter your name.",
+  "contactFormEmailLabel": "E-Mail",
+  "contactFormEmailInvalid": "Please enter a valid E-Mail.",
+  "contactFormMessageLabel": "Message",
+  "contactFormMessageInvalid": "Please enter your message.",
+  "contactFormPrivacyLabel": "I have read the privacy policy and I consent to the processing of my data.",
+  "contactFormPrivacyInvalid": "Please read and accept the privacy policy.",
+  "contactFormSubmitBtn": "Send"
 }

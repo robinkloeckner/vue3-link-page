@@ -54,7 +54,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--background-alternative);
+    background-color: var(--background-alternative-2);
     border-radius: 0 0 25px 25px;
 
     &-img {

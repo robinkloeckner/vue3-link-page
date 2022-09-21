@@ -5,6 +5,7 @@
 :root {
   --background-default: #{$light};
   --background-alternative: #{$light};
+  --background-alternative-2: #{$gray-100};
 
   --title-default: #{$gray-600};
   --title-alternative: #{$primary};
@@ -17,12 +18,18 @@
   --border-default-plus: var(--background-default);
 
   --switch-default: #{$gray-400};
-  --switch-background-default: var(--background-default);
+  --switch-background-default: var(--background-alternative-2);
 
   --svg-default: #{$gray-550};
   --svg-alternative: #{$primary};
   --svg-hover-default: #{$primary};
   --svg-background-default: #{$gray-400};
+
+  --btn-primary-font-color: #{$light};
+  --btn-primary-font-color-hover: #{$primary};
+
+  --field-border: #{$input-border-color};
+  --field-label: #6C757D;
 
   --primary: #{$primary};
   --primary-hover: #{$gray-700};
@@ -31,6 +38,7 @@
 :root.dark {
   --background-default: #{$dark};
   --background-alternative: #{$gray-800};
+  --background-alternative-2: #{$gray-800};
 
   --title-default: #{$light};
   --title-alternative: #{$gray-200};
@@ -47,4 +55,10 @@
   --svg-default: #{$primary};
   --svg-hover-default: #{$gray-100};
   --svg-background-default: #{$dark};
+
+  --btn-primary-font-color: #{$light};
+  --btn-primary-font-color-hover: #{$primary};
+
+  --field-border: #{$input-border-color};
+  --field-label: #{$input-border-color};
 }

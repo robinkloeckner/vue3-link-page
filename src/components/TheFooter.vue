@@ -27,7 +27,7 @@
   footer {
     padding-top: calc(#{$section-padding-y} / 2);
     padding-bottom: calc(#{$section-padding-y} / 2);
-    background-color: var(--background-alternative);
+    background-color: var(--background-alternative-2);
 
     nav {
       text-align: center;

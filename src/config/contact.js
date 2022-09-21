@@ -8,7 +8,8 @@ const contact = {
   zip: "12345",
   town: "Hometown",
   phone: "+49 123 4 56 78 90",
-  mail: "heya@yourdomain.com"
+  mail: "heya@yourdomain.com",
+  enableForm: true
 };
 
 export default contact;

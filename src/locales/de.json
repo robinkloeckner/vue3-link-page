@@ -11,5 +11,15 @@
   "legalH1": "Imressum",
   "legalContent": "<p><h2>Angaben</h2>\n<p>{name}<br />\n{street}<br />\n{zip} {town}</p><p>Telefon: {phone}<br />\nE-Mail: {mail}</p><p>...</p>",
   "privacyH1": "Datenschutzerklärung",
-  "privacyContent": "<h2>1. Überblick</h2>\n<h3>Allgemeine Hinweise</h3> <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>"
+  "privacyContent": "<h2>1. Überblick</h2>\n<h3>Allgemeine Hinweise</h3> <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>",
+  "contactFormH1": "Jetzt kontaktieren!",
+  "contactFormNameLabel": "Name",
+  "contactFormNameInvalid": "Bitte gib deinen Namen an.",
+  "contactFormEmailLabel": "E-Mail",
+  "contactFormEmailInvalid": "Bitte gib eine gültige E-Mail an.",
+  "contactFormMessageLabel": "Nachricht",
+  "contactFormMessageInvalid": "Bitte gib eine Nachricht ein.",
+  "contactFormPrivacyLabel": "Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten zu.",
+  "contactFormPrivacyInvalid": "Bitte lies und akzeptiere die Datenschutzerklärung.",
+  "contactFormSubmitBtn": "Senden"
 }
