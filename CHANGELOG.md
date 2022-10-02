@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.1.1] (2022-10-03)
+
+### Fixed
+
+- Fix bug by adding missing api file.
+
 ## [1.1.0] (2022-10-02)
 
 ### Changed
@@ -16,6 +22,8 @@
 ## [1.0.0] (2022-08-24)
 
 _Initial release._
+
+[1.1.1]: https://github.com/robinkloeckner/vue3-link-page/compare/v1.1.0...v1.1.1
 
 [1.1.0]: https://github.com/robinkloeckner/vue3-link-page/compare/v1.0.0...v1.1.0
 
