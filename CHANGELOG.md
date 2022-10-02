@@ -4,14 +4,17 @@
 
 ### Fixed
 
-- Fix bug in ContactForm component.
--
+- Fix bug in ContactForm
+  component. ([a11007f](https://github.com/robinkloeckner/vue3-link-page/commit/a11007faabd8ef69c49e7e30ca52c0b9b9565619))
+  ([robinkloeckner](https://github.com/robinkloeckner))
 
 ## [1.1.1] (2022-10-03)
 
 ### Fixed
 
-- Fix bug by adding missing api file.
+- Fix bug by adding missing api
+  file.([38eee26](https://github.com/robinkloeckner/vue3-link-page/commit/38eee26b383bb631dddf6928361f1b8fb9c37d80))
+  ([robinkloeckner](https://github.com/robinkloeckner))
 
 ## [1.1.0] (2022-10-02)
 
