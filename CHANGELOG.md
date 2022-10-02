@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2] (2022-10-03)
+
+### Fixed
+
+- Fix bug in ContactForm component.
+-
+
 ## [1.1.1] (2022-10-03)
 
 ### Fixed
@@ -22,6 +29,8 @@
 ## [1.0.0] (2022-08-24)
 
 _Initial release._
+
+[1.1.2]: https://github.com/robinkloeckner/vue3-link-page/compare/v1.1.1...v1.1.2
 
 [1.1.1]: https://github.com/robinkloeckner/vue3-link-page/compare/v1.1.0...v1.1.1
 

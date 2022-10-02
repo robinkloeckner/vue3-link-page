@@ -53,7 +53,7 @@
   const submitForm = async () => {
     // Catch potentially incorrect/missing endpoint key in config file.
     try {
-      httpStatus.value = await api("postContactFor", formData);
+      httpStatus.value = await api("postContactForm", formData);
     } catch (error) {
       console.error(error);
       httpStatus.value = "Error";
