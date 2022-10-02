@@ -21,5 +21,7 @@
   "contactFormMessageInvalid": "Bitte gib eine Nachricht ein.",
   "contactFormPrivacyLabel": "Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten zu.",
   "contactFormPrivacyInvalid": "Bitte lies und akzeptiere die Datenschutzerklärung.",
-  "contactFormSubmitBtn": "Senden"
+  "contactFormHttp200": "Nachricht erfolgreich gesendet.",
+  "contactFormHttp400": "Die Angaben sind fehlerhaft. Bitte kontaktiere mich per E-Mail.",
+  "contactFormHttpError": "Es ist ein Fehler aufgetreten. Bitte kontaktiere mich per E-Mail."
 }

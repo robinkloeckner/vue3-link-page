@@ -14,8 +14,9 @@ See it in [action](https://links.robinkloeckner.com/).
 ## About This Project
 
 Said in advance, the reason for building a potentially static link page as a SPA was simply my personal preference for
-Vue. It hasn't been the intention to build a lean application but rather applying different concepts and plugins like
-Pinia and i18n for pleasure. Consider it as being a MVP and keep in mind there might be better alternatives for
+Vue. It hasn't been the intention to build a lean application but rather experimenting with different
+concepts and plugins like
+Pinia and i18n. Consider it as an MVP and keep in mind there might be better alternatives for
 building a link page.
 
 Some of the provided **features** and included plugins:
@@ -23,6 +24,7 @@ Some of the provided **features** and included plugins:
 - Bilingualism with [Vue I18n](https://kazupon.github.io/vue-i18n/)
 - Light and dark mode - state managed with [Pinia](https://pinia.vuejs.org/)
 - Link cards with images
+- Contact form (server side script or API required)
 - Separate views for legal notice and privacy policy - routing with [Vue Router](https://router.vuejs.org/)
 - [Bootstrap 5.1](https://getbootstrap.com/docs/5.1/getting-started/introduction/) (no plugin)
 - Linting with [ESLint](https://eslint.vuejs.org/)
@@ -57,6 +59,16 @@ under `src/locales/`.
 Contains contact information and are intended be used in multiple times in different places such as the legal notice and
 privacy policy
 pages.
+
+If you want to enable the form set `enableForm = true`, else `false`.
+
+#### Contact Form - `api.js`
+
+If you want to enable the contact form you need to set `enableForm = true` in `contact.js`, else `false`. Then
+add the required information in `api.js`. The config file is designed to configure
+multiple endpoints. However, in its basic form you only need to adjust the base url of the api `baseApiUrl`, the
+`path` of the endpoint in the `postContactForm` object and the header options if needed. Please do not change any key
+name.
 
 #### Internationalization - `i18n.js`:
 
@@ -110,8 +122,8 @@ the [documentation](https://kazupon.github.io/vue-i18n/started.html).
 ### SCSS & Themes Customization
 
 SCSS files are located in `src/assets/scss/`. The entry file is `main.js` which imports the remaining files. Bootstrap
-5.1 is imported here as well following the [documentation](https://getbootstrap.com/docs/5.1/customize/sass/), rather
-than using a Bootstrap plugin.
+5.1 is imported here as well following the [documentation](https://getbootstrap.com/docs/5.1/customize/sass/).
+The Bootstrap 5.1 source files are included in the repository (no plugin).
 
 Color variables are defined in `custom/variabls.scss`, which are then used to build the theme in `custom/themes.scss`.
 These are the two main files for customizing the themes of the application. Styles that apply for the complete HTML

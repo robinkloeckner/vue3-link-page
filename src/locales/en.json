@@ -21,5 +21,8 @@
   "contactFormMessageInvalid": "Please enter your message.",
   "contactFormPrivacyLabel": "I have read the privacy policy and I consent to the processing of my data.",
   "contactFormPrivacyInvalid": "Please read and accept the privacy policy.",
-  "contactFormSubmitBtn": "Send"
+  "contactFormSubmitBtn": "Send",
+  "contactFormHttp200": "Message successfully sent.",
+  "contactFormHttp400": "The data are incorrect. Please contact me via E-Mail.",
+  "contactFormHttpError": "Something went wrong. Please contact me via E-Mail."
 }
