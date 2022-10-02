@@ -17,6 +17,6 @@
 
 _Initial release._
 
-[1.1.0]: https://github.com/robinkloeckner/vue3-link-page/compare/tag/v1.0.0...v.1.1.0
+[1.1.0]: https://github.com/robinkloeckner/vue3-link-page/compare/v1.0.0...v1.1.0
 
 [1.0.0]: https://github.com/robinkloeckner/vue3-link-page/releases/tag/v1.0.0
