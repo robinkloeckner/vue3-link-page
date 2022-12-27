@@ -29,14 +29,14 @@
 <template>
   <a
     v-if="isExternal"
-    :href="url"
-    :target="target"
+    :href="props.url"
+    :target="props.target"
   >
     <slot />
   </a>
   <RouterLink
     v-else
-    :to="url"
+    :to="props.url"
     active-class="active"
   >
     <slot />

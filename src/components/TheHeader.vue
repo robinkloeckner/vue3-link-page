@@ -6,6 +6,9 @@
   import AppLink from "./AppLink.vue";
   import {defineAsyncComponent} from "vue";
   import contact from "@/config/contact.js";
+  import {useI18n} from "vue-i18n";
+
+  const {t} = useI18n();
 </script>
 
 <!----------------------
@@ -21,26 +24,30 @@
       >
     </div>
 
-    <!-- Text secion. -->
+    <!-- Text section. -->
     <div class="header-text">
       <div class="name">
         <h1>{{ contact.name }}</h1>
       </div>
       <div class="profession">
-        {{ $t("service") }}
+        {{ t("service") }}
       </div>
     </div>
 
     <!-- Icons / external links. -->
     <div class="header-icons">
-      <span
+      <template
         v-for="item in resources"
-        :key="item.name"
       >
-        <AppLink :url="item.url">
-          <component :is="defineAsyncComponent(() => import(`./icons/${item.icon}.vue`))" />
-        </AppLink>
-      </span>
+        <span
+          v-if="item.enableHeaderIcon === true && item.icon"
+          :key="item.name"
+        >
+          <AppLink :url="item.url">
+            <component :is="defineAsyncComponent(() => import(`./icons/${item.icon}.vue`))" />
+          </AppLink>
+        </span>
+      </template>
     </div>
   </header>
 </template>

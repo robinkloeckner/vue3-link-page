@@ -12,8 +12,8 @@
 <template>
   <ContentText
     :data="contact"
-    content-message="privacyContent"
-    h1-message="privacyH1"
+    content-message="privacy.content"
+    h1-message="privacy.heading"
   />
 </template>
 

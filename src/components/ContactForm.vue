@@ -28,7 +28,7 @@
 
 
   // Imported functions
-  const $v = useVuelidate(rules, formData);
+  const v = useVuelidate(rules, formData);
   const {t} = useI18n();
 
 
@@ -38,7 +38,7 @@
       return "";
     }
 
-    return t("contactFormHttp" + httpStatus.value);
+    return t("contactForm.http" + httpStatus.value);
   });
 
   const httpStatusMessageColor = computed(() => {
@@ -77,23 +77,23 @@
           class="visually-hidden"
           for="formName"
         >
-          {{ $t("contactFormNameLabel") }}
+          {{ t("contactForm.nameLabel") }}
         </label>
         <input
           id="formName"
           v-model="formData.name"
-          :class="{ 'is-invalid': $v.name.$error }"
-          :placeholder="$t('contactFormNameLabel')"
+          :class="{ 'is-invalid': v.name.$error }"
+          :placeholder="t('contactForm.nameLabel')"
           class="form-control form-control-lg"
           type="text"
-          @blur="$v.name.$touch"
+          @blur="v.name.$touch"
           @click="resetHttpState"
         >
         <div
-          :class="{ 'visible-feedback': $v.name.$error }"
+          :class="{ 'visible-feedback': v.name.$error }"
           class="invalid-feedback"
         >
-          {{ $t("contactFormNameInvalid") }}
+          {{ t("contactForm.nameInvalid") }}
         </div>
       </div>
 
@@ -103,23 +103,23 @@
           class="visually-hidden"
           for="formEmail"
         >
-          {{ $t("contactFormEmailLabel") }}
+          {{ t("contactForm.emailLabel") }}
         </label>
         <input
           id="formEmail"
           v-model="formData.email"
-          :class="{ 'is-invalid': $v.email.$error }"
-          :placeholder="$t('contactFormEmailLabel')"
+          :class="{ 'is-invalid': v.email.$error }"
+          :placeholder="t('contactForm.emailLabel')"
           class="form-control form-control-lg"
           type="email"
-          @blur="$v.email.$touch"
+          @blur="v.email.$touch"
           @click="resetHttpState"
         >
         <div
-          :class="{ 'visible-feedback': $v.email.$error }"
+          :class="{ 'visible-feedback': v.email.$error }"
           class="invalid-feedback"
         >
-          {{ $t("contactFormEmailInvalid") }}
+          {{ t("contactForm.emailInvalid") }}
         </div>
       </div>
 
@@ -129,24 +129,24 @@
           class="visually-hidden"
           for="formMessage"
         >
-          {{ $t('contactFormMessageLabel') }}
+          {{ t('contactForm.messageLabel') }}
         </label>
         <textarea
           id="formMail"
           v-model="formData.message"
-          :class="{ 'is-invalid': $v.message.$error }"
-          :placeholder="$t('contactFormMessageLabel')"
+          :class="{ 'is-invalid': v.message.$error }"
+          :placeholder="t('contactForm.messageLabel')"
           class="form-control form-control-lg"
           rows="5"
           type="email"
-          @blur="$v.message.$touch"
+          @blur="v.message.$touch"
           @click="resetHttpState"
         />
         <div
-          :class="{ 'visible-feedback': $v.message.$error }"
+          :class="{ 'visible-feedback': v.message.$error }"
           class="invalid-feedback"
         >
-          {{ $t("contactFormMessageInvalid") }}
+          {{ t("contactForm.messageInvalid") }}
         </div>
       </div>
 
@@ -156,22 +156,22 @@
           <input
             id="formCheckPrivacy"
             v-model="formData.privacy"
-            :class="{ 'is-invalid': $v.privacy.$error }"
+            :class="{ 'is-invalid': v.privacy.$error }"
             class="form-check-input"
             type="checkbox"
-            @blur="$v.privacy.$touch"
+            @blur="v.privacy.$touch"
             @click="resetHttpState"
           >
           <label
             class="form-check-label"
             for="formCheckPrivacy"
           >
-            {{ $t("contactFormPrivacyLabel") }} </label>
+            {{ t("contactForm.privacyLabel") }} </label>
           <div
-            :class="{ 'visible-feedback': $v.privacy.$error }"
+            :class="{ 'visible-feedback': v.privacy.$error }"
             class="invalid-feedback"
           >
-            {{ $t("contactFormPrivacyInvalid") }}
+            {{ t("contactForm.privacyInvalid") }}
           </div>
         </div>
       </div>
@@ -179,11 +179,11 @@
       <!-- Button. -->
       <div class="col-12">
         <AppBtn
-          :disabled="$v.$invalid"
+          :disabled="v.$invalid"
           type="submit"
           @on-click="submitForm"
         >
-          {{ $t("contactFormSubmitBtn") }}
+          {{ t("contactForm.submitBtn") }}
         </AppBtn>
       </div>
 

@@ -2,6 +2,10 @@
         Script
 ----------------------->
 <script setup>
+  import {useI18n} from "vue-i18n";
+
+  const {t} = useI18n();
+
   const props = defineProps({
     "h1Message": {
       type: String,
@@ -25,11 +29,11 @@
   <section class="container-fluid wrapper-content-text">
     <div class="row justify-content-center">
       <h1 class="col-12 cold-xl-6 text-center">
-        {{ $t(props.h1Message) }}
+        {{ t(props.h1Message) }}
       </h1>
       <div
         class="col-12 col-xl-6"
-        v-html="$t(props.contentMessage, props.data)"
+        v-html="t(props.contentMessage, props.data)"
       />
     </div>
   </section>

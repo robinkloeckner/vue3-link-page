@@ -1,27 +1,43 @@
 {
   "service": "Softwareentwicklung",
-  "btnHome": "Startseite",
-  "btnLegal": "Impressum",
-  "btnPrivacy": "Datenschutz",
-  "btnBackHome": "Zurück zur Startseite",
-  "contentLegal": "ImpressumHTML",
-  "contentPrivacy": "DatenschutzHTML",
-  "contentFooter1": "Gebaut mit {vueRef} + {viteRef} und viel { emoji }",
-  "contentFooter2": "Download Quellcode auf {githubRef}",
-  "legalH1": "Imressum",
-  "legalContent": "<p><h2>Angaben</h2>\n<p>{name}<br />\n{street}<br />\n{zip} {town}</p><p>Telefon: {phone}<br />\nE-Mail: {mail}</p><p>...</p>",
-  "privacyH1": "Datenschutzerklärung",
-  "privacyContent": "<h2>1. Überblick</h2>\n<h3>Allgemeine Hinweise</h3> <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>",
-  "contactFormH1": "Jetzt kontaktieren!",
-  "contactFormNameLabel": "Name",
-  "contactFormNameInvalid": "Bitte gib deinen Namen an.",
-  "contactFormEmailLabel": "E-Mail",
-  "contactFormEmailInvalid": "Bitte gib eine gültige E-Mail an.",
-  "contactFormMessageLabel": "Nachricht",
-  "contactFormMessageInvalid": "Bitte gib eine Nachricht ein.",
-  "contactFormPrivacyLabel": "Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten zu.",
-  "contactFormPrivacyInvalid": "Bitte lies und akzeptiere die Datenschutzerklärung.",
-  "contactFormHttp200": "Nachricht erfolgreich gesendet.",
-  "contactFormHttp400": "Die Angaben sind fehlerhaft. Bitte kontaktiere mich per E-Mail.",
-  "contactFormHttpError": "Es ist ein Fehler aufgetreten. Bitte kontaktiere mich per E-Mail."
+  "home": "Startseite",
+  "btn": {
+    "home": "Home",
+    "legal": "Impressum",
+    "privacy": "Datenschutz",
+    "backHome": "Zurück zur Startseite"
+  },
+  "contactForm": {
+    "heading": "Jetzt kontaktieren!",
+    "nameLabel": "Name",
+    "nameInvalid": "Bitte gib deinen Namen an.",
+    "emailLabel": "E-Mail",
+    "emailInvalid": "Bitte gib eine gültige E-Mail an.",
+    "messageLabel": "Nachricht",
+    "messageInvalid": "Bitte gib eine Nachricht ein.",
+    "privacyLabel": "Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten zu.",
+    "privacyInvalid": "Bitte lies und akzeptiere die Datenschutzerklärung.",
+    "submitBtn": "Senden",
+    "http200": "Nachricht erfolgreich gesendet.",
+    "http400": "Die Angaben sind fehlerhaft. Bitte kontaktiere mich per E-Mail.",
+    "httpError": "Es ist ein Fehler aufgetreten. Bitte kontaktiere mich per E-Mail."
+  },
+  "footer": {
+    "madeWith": "Gebaut mit {vue} + {vite} und viel {emoji}",
+    "download": "Download Quellcode auf {github}"
+  },
+  "legal": {
+    "heading": "Impressum",
+    "content": "<p><h2>Angaben</h2>\n<p>{name}<br />\n{street}<br />\n{zip} {town}</p><p>Telefon: {phone}<br />\nE-Mail: {mail}</p><p>...</p>"
+  },
+  "privacy": {
+    "heading": "Datenschutzerklärung",
+    "content": "<h2>1. Überblick</h2>\n<h3>Allgemeine Hinweise</h3> <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>"
+  },
+  "links": {
+    "website": "Website",
+    "github": "GitHub",
+    "blog": "Blog",
+    "setup": "Mein Setup"
+  }
 }

@@ -6,6 +6,9 @@
   import resources from "@/config/resources.js";
   import contact from "@/config/contact.js";
   import ContactForm from "../components/ContactForm.vue";
+  import {useI18n} from "vue-i18n";
+
+  const {t} = useI18n();
 </script>
 
 <!----------------------
@@ -14,13 +17,14 @@
 <template>
   <section class="container-sm">
     <div class="row py-3 justify-content-center">
-      <template v-for="item in resources">
+      <template v-for="(item, key) in resources">
         <CardImage
-          v-if="item.generateCard === true"
-          :key="item.name"
+          v-if="!(item.enableCard === undefined || item.enableCard === false)"
+          :key="key"
           :icon="item.icon"
           :img="item.img"
-          :name="item.name"
+          :name="key"
+          :text-only="item.enableCard.textOnly"
           :url="item.url"
           class="col-12 my-3"
         />
@@ -32,7 +36,7 @@
     class="container-sm"
   >
     <h2 class="col-12">
-      {{ $t("contactFormH1") }}
+      {{ t("contactForm.heading") }}
     </h2>
     <ContactForm />
   </section>

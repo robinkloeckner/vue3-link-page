@@ -5,6 +5,7 @@
   import AppLink from "./AppLink.vue";
   import {computed} from "vue";
   import {defineAsyncComponent} from "vue";
+  import {useI18n} from "vue-i18n";
 
   const props = defineProps({
     name: {
@@ -17,17 +18,29 @@
     },
     icon: {
       type: String,
-      required: true
+      required: false,
+      default: undefined
     },
     img: {
       type: String,
       required: false,
       default: undefined
     },
+    textOnly: {
+      type: Boolean,
+      required: false,
+      default: false
+    }
+  });
+
+  const {t} = useI18n();
+
+  const hasIcon = computed(() => {
+    return props.textOnly === false && props.icon !== undefined;
   });
 
   const hasImage = computed(() => {
-    return props.img !== undefined;
+    return props.textOnly === false && props.img !== undefined;
   });
 </script>
 
@@ -45,12 +58,12 @@
       >
       <component
         :is="defineAsyncComponent(() => import(`./icons/${props.icon}.vue`))"
-        v-else
+        v-else-if="hasIcon"
         class="card-svg-top"
       />
       <div class="card-body">
         <h2 class="card-title">
-          {{ props.name }}
+          {{ t(`links.${props.name}`) }}
         </h2>
       </div>
     </div>

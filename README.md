@@ -56,7 +56,8 @@ under `src/locales/`.
 
 #### Common Information - `contact.js`:
 
-Contains contact information and are intended be used in multiple times in different places such as the legal notice and
+Contains contact information which are intended be used in multiple times in different places such as the legal notice
+and
 privacy policy
 pages.
 
@@ -81,17 +82,69 @@ For a full list of options, see the [documentation](https://kazupon.github.io/vu
 
 #### Links - `resources.js`:
 
-Configure the link cards in `<main>` and the link icons in `<header>` by defining a key for each link. Their values
-are  
-objects with the following options:
+Configure the link cards in `<main>` and the link icons in `<header>` inside the `resources` object. Each configuration
+object contains the settings
+for the header icon and the card of the linked resource. The order of the configuration object defines the order of the
+rendered icons and cards.
 
-| Key            | Value Type | Necessity | Explanation                                                                                                                                                      |
-|----------------|------------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `name`         | String     | required  | The name that is shown in the link card.                                                                                                                         |
-| `url`          | String     | required  | Reference to the external resource.                                                                                                                              |
-| `icon`         | String     | required  | The name of the component containing the Logo as SVG. The icon is shown in the header and in the link card if no image is specified in the `img` option.         |
-| `img`          | String     | optional  | Relative path of the image you want to show in the link card (no leading slash required). If specified, the icon specified in `icon` is only used in the header. |
-| `generateCard` | Boolean    | required  | If you only want to show a linked resource in the header, set this option `false` to prevent rendering a link card for the given resource.                       |
+The following options are available:
+
+| Key                   | Value Type          | Necessity                | Explanation                                                                                                                                                                                                                                                                                 |
+|-----------------------|---------------------|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `name`                | String              | required                 | The name that is shown in the link card.                                                                                                                                                                                                                                                    |
+| `url`                 | String              | required                 | Reference to the external resource.                                                                                                                                                                                                                                                         |
+| `icon`                | String              | required                 | The name of the component containing the Logo as SVG. The icon is shown in the header and in the link card if enabled (see `enableCard` option) and if no image is specified in the `img` option.                                                                                           |
+| `img`                 | String              | optional                 | Relative path of the image you want to show in the link card (no leading slash required). If specified, the icon specified in `icon` is only used in the header. `enableCard.textOnly` must be `false` in order do display the image. If `enableCards: false`, the image won`t be rendered. |
+| `enableHeaderIcon`    | Boolean             | required                 | `true`: Icon in the header will be rendered, otherwiste not.                                                                                                                                                                                                                                |
+| `enableCard`          | Object &#124; False | required                 | If you only want to show a linked resource in the header, set this option `false` to prevent rendering a link card for the given resource. If you want to render a card, specify an object with `testOnly`option.                                                                           |
+| `enableCard.textOnly` | Boolean             | optional | If `enableCard: true` this parameter is required: `true` will only render a Card with text. `false` will render the card with either the image or the icon, if set. Otherwise only text will be rendered.                                                                                   |
+
+**Examples**
+
+Render header icon and card with an image:
+
+```
+website: {
+    name: "Website",
+    url: "https://www.robinkloeckner.com/",
+    icon: "IconGlobe",
+    img: "img/website.jpg",
+    enableHeaderIcon: true,
+    enableCard: {
+      textOnly: false
+    }
+},
+```
+
+If you omit `img`, the card will be rendered with the icon instead.
+
+Render header icon only:
+
+```
+blog: {
+    name: "Blog",
+    url: "https://blog.robinkloeckner.com/",
+    icon: "IconGlobe",
+    img: "img/website.jpg",
+    enableHeaderIcon: true,
+    enableCard: false
+},
+```
+
+Specifying `img` in this case won't have any effect.
+
+Render text-only card:
+
+```
+setup: {
+    name: "Setup",
+    url: "https://blog.robinkloeckner.com/",
+    enableHeaderIcon: false,
+    enableCard: {
+      textOnly: true
+    }
+},
+```
 
 ---
 

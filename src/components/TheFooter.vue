@@ -4,9 +4,6 @@
 <script setup>
   import TheNavigation from "./TheNavigation.vue";
 
-  const viteRef = "<a target='_blank' href='https://vitejs.dev/'>Vite</a>";
-  const vueRef = "<a target='_blank' href='https://vuejs.org/'>Vue 3</a>";
-  const githubRef = "<a target='_blank' href='https://github.com/robinkloeckner/vue3-link-page/'>GitHub</a>";
 </script>
 
 <!----------------------
@@ -15,8 +12,39 @@
 <template>
   <footer>
     <TheNavigation />
-    <p v-html="$t('contentFooter1', { vueRef: vueRef, viteRef: viteRef, emoji: '&#10084;&#65039;' })" />
-    <p v-html="$t('contentFooter2', { githubRef: githubRef })" />
+    <i18n-t
+      keypath="footer.madeWith"
+      scope="global"
+      tag="p"
+    >
+      <template #vue>
+        <a
+          href="https://vuejs.org/"
+          target="_blank"
+        >Vue 3</a>
+      </template>
+      <template #vite>
+        <a
+          href="https://vitejs.dev/"
+          target="_blank"
+        >Vite</a>
+      </template>
+      <template #emoji>
+        &#10084;&#65039;
+      </template>
+    </i18n-t>
+    <i18n-t
+      keypath="footer.download"
+      scope="global"
+      tag="p"
+    >
+      <template #github>
+        <a
+          href="https://github.com/robinkloeckner/vue3-link-page/"
+          target="_blank"
+        >GitHub</a>
+      </template>
+    </i18n-t>
   </footer>
 </template>
 

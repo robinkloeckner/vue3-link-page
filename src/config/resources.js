@@ -8,13 +8,35 @@ const resources = {
     url: "https://www.robinkloeckner.com/",
     icon: "IconGlobe",
     img: "img/website.jpg",
-    generateCard: true
+    enableHeaderIcon: true,
+    enableCard: {
+      textOnly: false
+    }
   },
   github: {
     name: "GitHub",
     url: "https://github.com/robinkloeckner",
     icon: "IconGitHub",
-    generateCard: true
+    enableHeaderIcon: true,
+    enableCard: {
+      textOnly: false
+    }
+  },
+  setup: {
+    name: "Setup",
+    url: "#",
+    icon: "IconGlobe",
+    enableHeaderIcon: false,
+    enableCard: {
+      textOnly: true
+    }
+  },
+  blog: {
+    name: "Blog",
+    url: "#",
+    icon: "IconGlobe",
+    enableHeaderIcon: true,
+    enableCard: false
   }
 };
 

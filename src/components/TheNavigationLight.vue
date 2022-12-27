@@ -3,6 +3,9 @@
 ----------------------->
 <script setup>
   import AppLink from "./AppLink.vue";
+  import {useI18n} from "vue-i18n";
+
+  const {t} = useI18n();
 </script>
 
 <!----------------------
@@ -11,7 +14,7 @@
 <template>
   <nav>
     <AppLink url="/">
-      {{ $t('btnBackHome') }}
+      {{ t('btn.backHome') }}
     </AppLink>
   </nav>
 </template>

@@ -1,28 +1,42 @@
 {
   "service": "Software Development",
-  "btnHome": "Home",
-  "btnLegal": "Legal Notice",
-  "btnPrivacy": "Privacy",
-  "btnBackHome": "Back Home",
-  "contentLegal": "LegalHTML",
-  "contentPrivacy": "PrivacyHTML",
-  "contentFooter1": "Made with { vueRef } + {viteRef} and much { emoji }",
-  "contentFooter2": "Download source code on {githubRef}",
-  "legalH1": "Legal Notice",
-  "legalContent": "<h2>Information</h2>\n<p>{name}<br />\n{street}<br />\n{zip} {town}</p><p>Phone: {phone}<br />\nE-mail: {mail}</p><p>...</p>",
-  "privacyH1": "Privacy Policy",
-  "privacyContent": "<h2>1. Overview</h2>\n<h3>General information</h3> <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>",
-  "contactFormH1": "Get in touch!",
-  "contactFormNameLabel": "Name",
-  "contactFormNameInvalid": "Please enter your name.",
-  "contactFormEmailLabel": "E-Mail",
-  "contactFormEmailInvalid": "Please enter a valid E-Mail.",
-  "contactFormMessageLabel": "Message",
-  "contactFormMessageInvalid": "Please enter your message.",
-  "contactFormPrivacyLabel": "I have read the privacy policy and I consent to the processing of my data.",
-  "contactFormPrivacyInvalid": "Please read and accept the privacy policy.",
-  "contactFormSubmitBtn": "Send",
-  "contactFormHttp200": "Message successfully sent.",
-  "contactFormHttp400": "The data are incorrect. Please contact me via E-Mail.",
-  "contactFormHttpError": "Something went wrong. Please contact me via E-Mail."
+  "btn": {
+    "home": "Home",
+    "legal": "Legal Notice",
+    "privacy": "Privacy",
+    "backHome": "Back Home"
+  },
+  "contactForm": {
+    "heading": "Get in touch!",
+    "nameLabel": "Name",
+    "nameInvalid": "Please enter your name.",
+    "emailLabel": "E-Mail",
+    "emailInvalid": "Please enter a valid E-Mail.",
+    "messageLabel": "Message",
+    "messageInvalid": "Please enter your message.",
+    "privacyLabel": "I have read the privacy policy and I consent to the processing of my data.",
+    "privacyInvalid": "Please read and accept the privacy policy.",
+    "submitBtn": "Send",
+    "http200": "Message successfully sent.",
+    "http400": "The data are incorrect. Please contact me via E-Mail.",
+    "httpError": "Something went wrong. Please contact me via E-Mail."
+  },
+  "footer": {
+    "madeWith": "Made with {vue} + {vite} and much {emoji}",
+    "download": "Download source code on {github}"
+  },
+  "legal": {
+    "heading": "Legal Notice",
+    "content": "<h2>Information</h2>\n<p>{name}<br />\n{street}<br />\n{zip} {town}</p><p>Phone: {phone}<br />\nE-mail: {mail}</p><p>...</p>"
+  },
+  "privacy": {
+    "heading": "Privacy Policy",
+    "content": "<h2>1. Overview</h2>\n<h3>General information</h3> <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>"
+  },
+  "links": {
+    "website": "Website",
+    "github": "GitHub",
+    "blog": "Blog",
+    "setup": "My Setup"
+  }
 }

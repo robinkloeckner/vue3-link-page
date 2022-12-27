@@ -12,8 +12,8 @@
 <template>
   <ContentText
     :data="contact"
-    content-message="legalContent"
-    h1-message="legalH1"
+    content-message="legal.content"
+    h1-message="legal.heading"
   />
 </template>
 
