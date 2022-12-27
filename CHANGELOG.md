@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.2.0] (2022-12-27)
+
+### Changed
+
+- Change I18n Composition API implicit property and function injection to explicit
+  injection. ([a7ab37a](https://github.com/robinkloeckner/vue3-link-page/commit/a7ab37aed9fc1f6fcefcf924bccb513b1232b821))
+  ([robinkloeckner](https://github.com/robinkloeckner))
+- Change v-html to component interpolation with slots syntax in TheFooter
+  component ([a7ab37a](https://github.com/robinkloeckner/vue3-link-page/commit/a7ab37aed9fc1f6fcefcf924bccb513b1232b821)) ([robinkloeckner](https://github.com/robinkloeckner))
+- Refactor locale message
+  paths ([a7ab37a](https://github.com/robinkloeckner/vue3-link-page/commit/a7ab37aed9fc1f6fcefcf924bccb513b1232b821)) ([robinkloeckner](https://github.com/robinkloeckner))
+
+### Added
+
+- Add card only mode and text only option for
+  cards. ([a7ab37a](https://github.com/robinkloeckner/vue3-link-page/commit/a7ab37aed9fc1f6fcefcf924bccb513b1232b821))
+  ([robinkloeckner](https://github.com/robinkloeckner))
+
 ## [1.1.2] (2022-10-03)
 
 ### Fixed
@@ -32,6 +50,8 @@
 ## [1.0.0] (2022-08-24)
 
 _Initial release._
+
+[1.2.0]: https://github.com/robinkloeckner/vue3-link-page/compare/v1.1.2...v1.2.0
 
 [1.1.2]: https://github.com/robinkloeckner/vue3-link-page/compare/v1.1.1...v1.1.2
 
